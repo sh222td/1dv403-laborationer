@@ -4,13 +4,29 @@ window.onload = function(){
 
 	
 	var birthday = function(date){
-		
-
 
 			// Din kod här.
 
+                if (!date /(\d{4})-(\d{2})-(\d{2})/) {
+                    
+                }
+                var array = date.split('-');
+                var birthdayArray = new Date(array[0], array[1] - 1, array[2]);
+                var currentDate = new Date();
+                var days = ((birthdayArray.getTime() - currentDate.getTime())/(1000*60*60*24));
+                var daysLeft = Math.ceil(days);
+                
 
-
+                if (daysLeft < 0) {
+                    alert("Du måste ange ett datum som inte varit än!");
+                }
+                
+                return daysLeft;
+                
+                
+                
+                
+                
 
 	};
 	// ------------------------------------------------------------------------------

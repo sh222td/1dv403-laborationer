@@ -4,15 +4,33 @@ window.onload = function(){
 
 	// I denna funktion ska du skriva koden för att hantera "spelet"
 	var convertString = function(str){
-		// Plats för förändring.		
+		// Plats för förändring.	
+		
+		
+		var stringArray = [];
+		var string = "";
+		var n;
+		
+		for (n = 0; n < str.length; n++){
+		    if (str[n].match(/([A-ZÅÄÖ])/g)) {
+		        stringArray[n] = str[n].replace(/([A-ZÅÄÖ])/g, str[n].toLowerCase());
+		    }
+		    else{
+                stringArray[n] = str[n].replace(/([a-zåäö])/g, str[n].toUpperCase());
+		    }
+		}
+		
+		for (var x = 0; x < stringArray.length; x++){
+		    string += stringArray[x];
+            console.log(stringArray[x]);
+		}
+		
+		string = str.replace(/A/gi,"#");
+		return string;
+		
 		// Returnera den konverterade strängen.
 		// Vid fel, kasta ett undantag med ett meddelande till användaren. 
 	
-
-
-
-
-
 
 	};
 	// ------------------------------------------------------------------------------
@@ -30,7 +48,7 @@ window.onload = function(){
 		p.classList.remove( "error");
 
 		try {
-			var answer = convertString(input.value) // Läser in texten från textrutan och skickar till funktionen "convertString"
+			var answer = convertString(input.value); // Läser in texten från textrutan och skickar till funktionen "convertString"
 			p.innerHTML = answer;		// Skriver ut texten från arrayen som skapats i funktionen.	
 		} catch (error){
 			p.classList.add( "error"); // Växla CSS-klass, IE10+
