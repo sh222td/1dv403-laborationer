@@ -7,9 +7,10 @@ window.onload = function(){
 
 			// Din kod här.
 
-                if (!date /(\d{4})-(\d{2})-(\d{2})/) {
-                    
+                if (!date.match(/(\d{4})\-(\d{2})\-(\d{2})/)) {
+                    alert("Du måste ange ett giltligt datum!");
                 }
+                
                 var array = date.split('-');
                 var birthdayArray = new Date(array[0], array[1] - 1, array[2]);
                 var currentDate = new Date();
