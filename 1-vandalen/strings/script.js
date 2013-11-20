@@ -10,6 +10,7 @@ window.onload = function(){
 		var stringArray = [];
 		var string = "";
 		var n;
+		var x;
 		
 		for (n = 0; n < str.length; n++){
 		    if (str[n].match(/([A-ZÅÄÖ])/g)) {
@@ -20,13 +21,13 @@ window.onload = function(){
 		    }
 		}
 		
-		for (var x = 0; x < stringArray.length; x++){
+		for (x = 0; x < stringArray.length; x++){
 		    string += stringArray[x];
             console.log(stringArray[x]);
 		}
 		
-		string = str.replace(/A/gi,"#");
-		return string;
+		var converted = string.replace(/A/gi,"#");
+		return converted;
 		
 		// Returnera den konverterade strängen.
 		// Vid fel, kasta ett undantag med ett meddelande till användaren. 
