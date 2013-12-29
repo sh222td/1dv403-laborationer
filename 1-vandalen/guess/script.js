@@ -11,7 +11,6 @@ window.onload = function(){
 			
 		// Plats för förändring.
 
-        count+=1;
 
         if (isNaN(number)) {
             return ([false, "Ange en siffra mellan 1 - 100"]);
@@ -20,6 +19,7 @@ window.onload = function(){
                 return ([false, "Talet är utanför intervallet 0 - 100"]);
         }
         else{
+            count+=1;
             if (number > secret) {
                 return ([false, "Det hemliga talet är lägre!"]);
             }

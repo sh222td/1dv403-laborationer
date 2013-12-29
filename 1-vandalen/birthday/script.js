@@ -10,17 +10,18 @@ window.onload = function(){
                 if (!date.match(/(\d{4})\-(\d{2})\-(\d{2})/)) {
                     alert("Du måste ange ett giltligt datum!");
                 }
-                
-                var array = date.split('-');
-                var birthdayArray = new Date(array[0], array[1] - 1, array[2]);
                 var currentDate = new Date();
+                var array = date.split('-');
+                var birthdayArray = new Date(currentDate.getFullYear(), array[1] - 1, array[2]);
+              
+                if(birthdayArray.getTime() < currentDate.getTime() && birthdayArray.getDate() !== currentDate.getDate())
+                {
+                 birthdayArray.setFullYear(birthdayArray.getFullYear() + 1);
+                }
+                 
                 var days = ((birthdayArray.getTime() - currentDate.getTime())/(1000*60*60*24));
                 var daysLeft = Math.ceil(days);
-                
-
-                if (daysLeft < 0) {
-                    alert("Du måste ange ett datum som inte varit än!");
-                }
+               
                 
                 return daysLeft;
                 
