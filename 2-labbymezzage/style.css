@@ -1,0 +1,93 @@
+#content {
+    padding:10px;
+    margin:auto;
+    text-align: center;
+    width: 800px ;
+    height: auto ;
+    background-repeat:no-repeat;
+    background: rgb(255,104,127); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255,104,127,1) 0%, rgba(255,50,81,1) 99%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,104,127,1)), color-stop(99%,rgba(255,50,81,1))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,104,127,1) 0%,rgba(255,50,81,1) 99%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(255,104,127,1) 0%,rgba(255,50,81,1) 99%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255,104,127,1) 0%,rgba(255,50,81,1) 99%); /* IE10+ */
+    background: radial-gradient(ellipse at center, rgba(255,104,127,1) 0%,rgba(255,50,81,1) 99%); /* W3C */
+    }
+    
+h1 {
+    font-size: 90px; 
+    font-family: 'Annie Use Your Telescope', cursive;
+    color: #74001B;
+    text-shadow: white 0.1em 0.1em 0.2em
+}    
+    
+h3 {
+ text-align:left;
+ color: #85004B;
+ font-family: 'Amatic SC', cursive;
+ font-size:30px;
+ margin-left:105px;
+ margin-top:-412px;
+}
+
+#textbox {
+    resize:none;
+    margin-top:0px;
+    margin-left:90px;
+    text-align:left;
+}
+
+#image {
+    margin-top:-190px;
+}
+
+#button {
+    width:20em;
+    height:2em;
+    margin-left:-352px;
+    cursor:pointer;
+}
+
+#numberOfMessages {
+    text-align:left;
+    margin-top:20px;
+    margin-left:90px;
+    font-family:arial;
+    border-bottom:1px solid black;
+    max-width:265px;
+    
+}
+
+#messagebox {
+    display:block;
+    padding:10px;
+    height: auto;
+    width: 600px;
+    background-color: #FF929A;
+    text-align: left;
+    margin-left: 90px;
+    border-style: groove;
+    border-width: 4px;
+    border-color:#A62F38;
+}
+
+div p {
+    font-family:Calibri;
+    margin-left:0px;
+}
+
+div {
+    margin:70px;
+}
+
+div h4 {
+    border-bottom:1px dotted black;
+    margin:0px;
+}
+
+.icon {
+    float:right;
+    margin-top:-45px;
+    cursor:pointer;
+}
+

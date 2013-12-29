@@ -1,0 +1,50 @@
+#content {
+    float:center;
+    text-align:center;
+    width:1280px;
+    height:740px;
+    background-image:url('images/wood.jpg');
+}
+
+#footer {
+    width:1280px;
+    height:70px;
+    background-image:url('images/woodFooter.jpg');
+    border-top: 5px solid black;
+}
+
+#RSSicon  {
+    float:left;
+    content:url('images/RSSicon.png');
+    margin:8px;
+}
+
+#RSSicon:hover {
+    cursor: pointer;
+}
+
+#MEMORYicon {
+    float:left;
+    content:url('images/MEMORYicon.jpg');
+    margin:8px;
+}
+
+#MEMORYicon:hover {
+    cursor: pointer;
+}
+
+.popup {
+    width: 300px;
+    height:450px;
+    border:ridge black;
+    border-radius:7px;
+    background: #443028;
+    position: absolute;
+    margin-left:500px;
+    margin-top:-800px;
+    z-index: 5;
+}
+
+.button {
+    float:right;
+}

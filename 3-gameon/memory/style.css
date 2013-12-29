@@ -1,0 +1,30 @@
+#content {
+    margin:auto;
+    text-align: center;
+    width: 800px ;
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size:100px;
+    color:#228751;
+}
+
+#memory {
+    float:auto;
+    margin-left:190px;
+	width: 140px;
+	height: 140px;
+	cursor: pointer;
+}
+
+img {
+    border: 1px solid #36D952;
+}
+
+#tries {
+    margin-top:310px;
+    font-family:Bookman;
+    font-size:25px;
+    color: green;
+}

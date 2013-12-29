@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta charset="UTF-8" />
+ 	<title>JavaScript - Validering</title>
+ 	<link rel="stylesheet" href="style.css" media="screen">
+</head>
+    <body id="body">
+        <!--<div id = "wrapper">-->
+        <main id="content">
+        <h1>Form</h1>
+        
+    	 <script src="script.js"></script>
+    	 
+    	 <form id="form" action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
+    <div class="row">
+        
+        <label>Förnamn</label>
+        <input id="firstname" name="Förnamn" placeholder="Förnamn" type="text"/>
+        <div id = "fn"></div>
+    </div>
+    <br>
+    <div class="row">
+        <label>Efternamn</label>
+        <input id="lastname" name="Efternamn" placeholder="Efternamn" type="text"/>
+        <div id = "en"></div>
+    <div class="row">
+        <div>
+        <br>
+        <label>E-Post</label>
+        </div>
+        <input id="email" name="E-Post" placeholder="E-Post" type="text"/>
+        <div id = "emailerror"></div>
+        <br>
+    <div class="row">
+        <br>
+        <label>Postnummer</label>
+        <input id="zipcode" name="Postnummer" placeholder="XXXXX" type="text"/>
+        <div id = "pn"></div>
+    </div>
+    <br>
+        <label  for="Prismodell">Prismodell:</label>
+                    <br>
+                    <select id = "price" for="Prismodell">
+                    <option value="Låg">Låg</option>
+                    <option value="Medel">Medel</option>
+                    <option value="Hög">Hög</option>
+                    </select>
+                    <br>
+                    <br>
+    </div>
+  </div>
+  
+  <button id="button">Genomför Köp</button>
+  
+</form>
+
+        </main>
+        <!--</div>-->
+    </body>
+</html> 
