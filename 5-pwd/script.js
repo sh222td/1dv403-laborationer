@@ -32,7 +32,7 @@ var Desktop = {
     
     memoryButton: function() {
         var that = this;
-        var memoryIcon = document.getElementById("RSSicon");
+        var memoryIcon = document.getElementById("MEMORYicon");
             memoryIcon.addEventListener("click", function() {
                     that.clicker();
             },false);
@@ -41,4 +41,5 @@ var Desktop = {
 
 window.onload = function(){
     Desktop.button();
+    Desktop.memoryButton();
 };

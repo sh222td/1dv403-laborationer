@@ -8,7 +8,6 @@ var Memory = {
     tries: 0,
     init: function(rows, cols) {
         var randomImage = RandomGenerator.getPictureArray(rows, cols);
-        this.scoreBoard();
         this.createTable(rows, cols, randomImage);
     },
     
@@ -69,10 +68,6 @@ var Memory = {
             console.log(this.tries);
         }
     },
-    
-    scoreBoard: function(tries) {
-        document.getElementById("tries").innerHTML = "Kattliv förlorade: " + this.tries;
-    }
 };
 
 window.onload = function() {

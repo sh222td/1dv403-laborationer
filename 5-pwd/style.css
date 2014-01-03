@@ -1,5 +1,4 @@
 #content {
-    float:center;
     text-align:center;
     width:1280px;
     height:740px;
@@ -7,15 +6,12 @@
 }
 
 #footer {
-    width:1280px;
-    height:70px;
-    background-image:url('images/woodFooter.jpg');
-    border-top: 5px solid black;
+    margin-top:30px;
+    border-bottom: 5px solid black;
 }
 
 #RSSicon  {
     float:left;
-    content:url('images/RSSicon.png');
     margin:8px;
 }
 
@@ -25,8 +21,8 @@
 
 #MEMORYicon {
     float:left;
-    content:url('images/MEMORYicon.jpg');
     margin:8px;
+    margin-bottom: 10px;
 }
 
 #MEMORYicon:hover {

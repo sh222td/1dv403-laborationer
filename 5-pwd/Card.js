@@ -6,7 +6,7 @@ function Card (card, memory) {
         var a = document.createElement("a");
         a.href = "#";
         img.className = "icon";
-        img.src = "pics/background0.png";
+        img.src = "memorybilder/background0.png";
         var that = this;
         a.appendChild(img);
         td.appendChild(a);
@@ -23,12 +23,12 @@ function Card (card, memory) {
         a.onclick = function() {
             memory.flipCard(that);
         };
-        img.src = "pics/background0.png";
+        img.src = "memorybilder/background0.png";
     };
     
     this.flip = function() {
         a.onclick = null;
-        img.src = "pics/" + card + ".png";
+        img.src = "memorybilder/" + card + ".png";
     };
     
     this.getID = function() {
