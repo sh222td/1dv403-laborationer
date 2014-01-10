@@ -1,46 +1,104 @@
 #content {
-    text-align:center;
     width:1280px;
     height:740px;
+    margin:auto;
     background-image:url('images/wood.jpg');
+    position: absolute;
 }
 
-#footer {
-    margin-top:30px;
-    border-bottom: 5px solid black;
+#menu {
+    width:100%;
+    border-top: 5px solid black;    
+    position:absolute; bottom:0;
+    background-color: rgba(34, 24, 28, 0.5);
+    background: rgba(34, 24, 28, 0.5);
+    color: rgba(34, 24, 28, 0.5);
 }
 
-#RSSicon  {
+#GALLERYicon  {
     float:left;
     margin:8px;
 }
 
-#RSSicon:hover {
+#GALLERYicon:hover {
     cursor: pointer;
 }
 
-#MEMORYicon {
-    float:left;
-    margin:8px;
-    margin-bottom: 10px;
+#clock {
+    font-family:Verdana;
+    color:white;
+    border:solid white 1px;
+    float:right;
+    margin-top:25px;
+    margin-right:10px;
 }
 
-#MEMORYicon:hover {
-    cursor: pointer;
+.image {
+    background-image:url('images/tinyCamera.png');
+    background-repeat: no-repeat;
+    padding:13px;
+    margin-top:3px;
+    margin-left:3px;
+
 }
 
 .popup {
-    width: 300px;
-    height:450px;
+    width: 375px;
+    height:270px;
+    margin-left:30px;
+    margin-top:20px;
     border:ridge black;
     border-radius:7px;
-    background: #443028;
+    background: #B2A092;
     position: absolute;
-    margin-left:500px;
-    margin-top:-800px;
-    z-index: 5;
+    z-index: 3;
+    overflow-y:auto;
 }
 
-.button {
+.cancelButton {
     float:right;
+    margin-top:-45px;
+    margin-right:5px;
 }
+
+.cancelButton:hover {
+    cursor:pointer;
+}
+
+.headerText {
+    color: white;
+    font-family:Helvetica;
+    margin-left:30px;
+    margin-top:-24px;
+}
+
+header {
+    width:358px;
+    height:30px;
+    /*margin-top:-16px;*/
+    border:bottom:1px solid black;
+    background: rgba(130,106,99,1);
+    background: -moz-linear-gradient(top, rgba(130,106,99,1) 0%, rgba(30,13,0,1) 88%, rgba(30,13,0,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(130,106,99,1)), color-stop(88%, rgba(30,13,0,1)), color-stop(100%, rgba(30,13,0,1)));
+    background: -webkit-linear-gradient(top, rgba(130,106,99,1) 0%, rgba(30,13,0,1) 88%, rgba(30,13,0,1) 100%);
+    background: -o-linear-gradient(top, rgba(130,106,99,1) 0%, rgba(30,13,0,1) 88%, rgba(30,13,0,1) 100%);
+    background: -ms-linear-gradient(top, rgba(130,106,99,1) 0%, rgba(30,13,0,1) 88%, rgba(30,13,0,1) 100%);
+    background: linear-gradient(to bottom, rgba(130,106,99,1) 0%, rgba(30,13,0,1) 88%, rgba(30,13,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#826a63', endColorstr='#1e0d00', GradientType=0 );
+}
+
+footer {
+    width:360px;
+    text-align:center;
+    margin-top: 100px;
+}
+
+.boxes {
+    background-color: #D2CBC5;
+    margin:10px;
+    float:left;
+    padding:4px;
+    text-align:center;
+}
+
+
