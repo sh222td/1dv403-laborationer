@@ -6,12 +6,15 @@ var Memory = {
     currentCard: null,
     previousCard: null,
     tries: 0,
+    
+    //Blandar bilderna och kallar på tabellmetoden createTable.
     init: function(rows, cols) {
         var randomImage = RandomGenerator.getPictureArray(rows, cols);
         this.scoreBoard();
         this.createTable(rows, cols, randomImage);
     },
     
+    //Skapar memorytabellen.
     createTable: function(rows, cols, randomImage){
     var body = document.getElementById("memory");
     var table  = document.createElement("table");
@@ -34,6 +37,7 @@ var Memory = {
     body.appendChild(table);
     },
     
+    //Vänder brickorna och kollar om de är likadana eller olika.
     flipCard: function(card) {
         if (this.currentCard !== null && this.previousCard !==null) {
             return;
@@ -70,6 +74,7 @@ var Memory = {
         }
     },
     
+    //Anger hur många försök det tog att klara spelet.
     scoreBoard: function(tries) {
         document.getElementById("tries").innerHTML = "Kattliv förlorade: " + this.tries;
     }

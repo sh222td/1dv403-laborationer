@@ -83,7 +83,8 @@ var Desktop = {
                     var currentThumb;
                     var height = 0;
                     var width = 0;
-                
+                    
+                    //Letar upp bilden med den bredaste och högsta tumlängd.
                     for (var n = 0; n < jsonStr.length; n++) {
                         currentThumb = jsonStr[n];
                         if (currentThumb.thumbHeight > height) {
@@ -128,6 +129,7 @@ var Desktop = {
         xhr.send(null);
     },
     
+    //Funktion som skapar en digital klocka.
     interval: function() {
         
         setInterval(function(){updateClock()},1000);
@@ -135,27 +137,18 @@ var Desktop = {
         function updateClock(){
        
             var currentTime = new Date ();
-            var currentHours = currentTime.getHours();
-            var currentMinutes = currentTime.getMinutes();
-            var currentSeconds = currentTime.getSeconds();
+            var hours = currentTime.getHours();
+            var minutes = currentTime.getMinutes();
+            var seconds = currentTime.getSeconds();
 
-            // Pad the minutes and seconds with leading zeros, if required
-            currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
-            currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
+            minutes = ( minutes < 10 ? "0" : "" ) + minutes;
+            seconds = ( seconds < 10 ? "0" : "" ) + seconds;
     
-            // Choose either "AM" or "PM" as appropriate
-            var timeOfDay = ( currentHours < 12 ) ? "AM" : "PM";
+            var timeOfDay = ( hours < 12 ) ? "AM" : "PM";
+            hours = ( hours > 12 ) ? hours - 12 : hours;
+            hours = ( hours === 0 ) ? 12 : hours;
 
-            // Convert the hours component to 12-hour format if needed
-            currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
-
-            // Convert an hours component of "0" to "12"
-            currentHours = ( currentHours === 0 ) ? 12 : currentHours;
-
-            // Compose the string for display
-            var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
-
-            // Update the time display
+            var currentTimeString = hours + ":" + minutes + ":" + seconds + " " + timeOfDay;
             document.getElementById("clock").firstChild.nodeValue = currentTimeString;
         }
     }

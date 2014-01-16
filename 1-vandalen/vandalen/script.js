@@ -35,5 +35,4 @@ var makePerson = function(persArr){
     });
  
     return personObj;
-    
 };

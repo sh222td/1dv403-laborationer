@@ -1,5 +1,6 @@
 "use strict";
 
+//Gör varje bild till ett eget klickbart objekt och vänder upp bilden som klickats på.
 function Card (card, memory) {
         var td = document.createElement("td");
         var img = document.createElement("img");

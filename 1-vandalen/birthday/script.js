@@ -21,14 +21,8 @@ window.onload = function(){
                  
                 var days = ((birthdayArray.getTime() - currentDate.getTime())/(1000*60*60*24));
                 var daysLeft = Math.ceil(days);
-               
                 
                 return daysLeft;
-                
-                
-                
-                
-                
 
 	};
 	// ------------------------------------------------------------------------------

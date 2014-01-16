@@ -26,7 +26,6 @@ var Form = {
             else if (firstName.value.length > 0){
                 var removeMsg = document.getElementById("fname");
                 removeMsg.parentNode.removeChild(removeMsg);
-                //button.disabled = false;
                 this.exist = null;
             }
         };
@@ -102,8 +101,6 @@ var Form = {
                 this.exist = null;
             }
         };
-    //var newButton = document.getElementById("button");
-    //newButton.disabled = true;
     },
 
     
